@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650BD55E1D7EBD0F00A4F6B1 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BD55D1D7EBD0F00A4F6B1 /* DateCollectionViewCell.swift */; };
+		650BD5601D7EBD1B00A4F6B1 /* WeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BD55F1D7EBD1B00A4F6B1 /* WeekCollectionViewCell.swift */; };
 		65B356C91D76BEA4005B5131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B356C81D76BEA4005B5131 /* AppDelegate.swift */; };
 		65B356CB1D76BEA4005B5131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B356CA1D76BEA4005B5131 /* ViewController.swift */; };
 		65B356CE1D76BEA4005B5131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B356CC1D76BEA4005B5131 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		650BD55D1D7EBD0F00A4F6B1 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		650BD55F1D7EBD1B00A4F6B1 /* WeekCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCollectionViewCell.swift; sourceTree = "<group>"; };
 		65B356C51D76BEA4005B5131 /* CalenderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalenderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B356C81D76BEA4005B5131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65B356CA1D76BEA4005B5131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				65B356CF1D76BEA4005B5131 /* Assets.xcassets */,
 				65B356D11D76BEA4005B5131 /* LaunchScreen.storyboard */,
 				65B356D41D76BEA5005B5131 /* Info.plist */,
+				650BD55D1D7EBD0F00A4F6B1 /* DateCollectionViewCell.swift */,
+				650BD55F1D7EBD1B00A4F6B1 /* WeekCollectionViewCell.swift */,
 			);
 			path = CalenderDemo;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B356CB1D76BEA4005B5131 /* ViewController.swift in Sources */,
+				650BD55E1D7EBD0F00A4F6B1 /* DateCollectionViewCell.swift in Sources */,
+				650BD5601D7EBD1B00A4F6B1 /* WeekCollectionViewCell.swift in Sources */,
 				65B356C91D76BEA4005B5131 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +492,7 @@
 				65B356EF1D76BEA5005B5131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65B356F01D76BEA5005B5131 /* Build configuration list for PBXNativeTarget "CalenderDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				65B356F21D76BEA5005B5131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65B356F31D76BEA5005B5131 /* Build configuration list for PBXNativeTarget "CalenderDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				65B356F51D76BEA5005B5131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
