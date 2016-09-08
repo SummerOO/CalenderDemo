@@ -30,6 +30,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     lazy var lastButton: UIButton = {
        let last = UIButton(type: .System)
         last.setTitle("<--", forState: .Normal)
+        last.setTitleColor(UIColor.blackColor(), forState: .Normal)
         last.addTarget(self, action: #selector(lastAction), forControlEvents: .TouchUpInside)
         self.view.addSubview(last)
         return last
@@ -38,6 +39,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     lazy var nextButton: UIButton = {
        let next = UIButton(type: .System)
         next.setTitle("-->", forState: .Normal)
+        next.setTitleColor(UIColor.blackColor(), forState: .Normal)
         next.addTarget(self, action: #selector(nextAction), forControlEvents: .TouchUpInside)
         self.view.addSubview(next)
         return next
@@ -81,6 +83,7 @@ extension ViewController {
         self.view.addSubview(myCollection)
         
         self.timeLabel.text = String(format: "%li-%.2ld", self.year(self.date), self.month(self.date))
+
         
     }
     
@@ -123,11 +126,36 @@ extension ViewController {
             } else {
                 day = index - week + 1
                 cell.timeLabel.text = String(day)
+                
+                let da = NSDate()
+                let com = NSCalendar.currentCalendar().component(NSCalendarUnit.Month, fromDate: da)
+                
+                let abc = String(format: "%li-%.2ld", self.year(self.date), com)
+                
+                if self.timeLabel.text! == abc {
+                    
+                    if cell.timeLabel.text == String(self.day(date)) {
+                        cell.backgroundColor = UIColor.redColor()
+                    } else {
+                        cell.backgroundColor = UIColor.whiteColor()
+                    }
+
+                } else {
+                    cell.backgroundColor = UIColor.whiteColor()
+                }
+                
+                
+                
             }
             return cell
         }
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        collectionView.deselectItemAtIndexPath(indexPath, animated: true)
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! DateCollectionViewCell
+        print(cell.timeLabel.text)
+    }
     
 }
 
