@@ -128,14 +128,14 @@ extension ViewController {
                 cell.timeLabel.text = String(day)
                 
                 let da = NSDate()
-                let com = NSCalendar.currentCalendar().component(NSCalendarUnit.Month, fromDate: da)
+                let com = NSCalendar.currentCalendar().components([NSCalendarUnit.Year, NSCalendarUnit.Month, NSCalendarUnit.Day], fromDate: da)
                 
-                let abc = String(format: "%li-%.2ld", self.year(self.date), com)
+                let abc = String(format: "%li-%.2ld", com.year, com.month)
                 
                 if self.timeLabel.text! == abc {
                     
                     if cell.timeLabel.text == String(self.day(date)) {
-                        cell.backgroundColor = UIColor.redColor()
+                        cell.backgroundColor = UIColor.cyanColor()
                     } else {
                         cell.backgroundColor = UIColor.whiteColor()
                     }
