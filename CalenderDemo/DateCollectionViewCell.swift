@@ -10,7 +10,7 @@ import UIKit
 
 class DateCollectionViewCell: UICollectionViewCell {
     lazy var timeLabel: UILabel = {
-        let time = UILabel(frame: CGRectZero)
+        let time = UILabel(frame: CGRect.zero)
         self.addSubview(time)
         return time
     }()
@@ -18,7 +18,7 @@ class DateCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        timeLabel.frame = CGRectMake(0, 10, 30, 20)
+        timeLabel.frame = CGRect(x: 0, y: 10, width: 30, height: 20)
         
     }
     

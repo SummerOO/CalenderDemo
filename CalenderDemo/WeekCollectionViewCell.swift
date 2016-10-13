@@ -12,9 +12,9 @@ class WeekCollectionViewCell: UICollectionViewCell {
     
     
     lazy var timeLabel: UILabel = {
-       let time = UILabel(frame: CGRectZero)
+       let time = UILabel(frame: CGRect.zero)
         time.text = "一"
-        time.textAlignment = .Center
+        time.textAlignment = .center
         self.addSubview(time)
         return time
     }()
@@ -22,7 +22,7 @@ class WeekCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        timeLabel.frame = CGRectMake(0, 15, 20, 20)
+        timeLabel.frame = CGRect(x: 0, y: 15, width: 20, height: 20)
         
     }
     

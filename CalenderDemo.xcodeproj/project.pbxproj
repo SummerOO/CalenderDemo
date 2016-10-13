@@ -199,6 +199,8 @@
 				TargetAttributes = {
 					65B356C41D76BEA4005B5131 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PGSG5N7A57;
+						LastSwiftMigration = 0800;
 					};
 					65B356D81D76BEA5005B5131 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -409,10 +411,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PGSG5N7A57;
 				INFOPLIST_FILE = CalenderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--Zr.CalenderDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -420,10 +424,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PGSG5N7A57;
 				INFOPLIST_FILE = CalenderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--Zr.CalenderDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
